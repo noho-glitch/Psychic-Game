@@ -21,6 +21,8 @@ document.onkeyup = function() {
         }
         if ((userguess == psychicGuess)) {
             wins++;
+            chances = 10;
+            guesses = [];
             alert("you win!")
         }
 
@@ -29,12 +31,13 @@ document.onkeyup = function() {
         
         if ((chances == 0)) {
             losses++;
+            chances = 10;
+            guesses = [];
         }
 
         if (userguess !== psychicGuess) {
             guesses.push(userguess);
             console.log(guesses)
-
         }
         
         var html = "<img src='assets/images/logo.png'></img>" +
