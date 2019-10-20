@@ -2,6 +2,7 @@ var options = ["a", "b", "c", "d"];
 var wins = 0;
 var losses = 0;
 var chances = 10;
+var guesses = "";
 
 document.onkeyup = function() {
     var userguess = String.fromCharCode(event.keyCode).
@@ -23,14 +24,22 @@ document.onkeyup = function() {
         }
 
         else ((userguess !== psychicGuess)) 
-            chances--;
+            chances--; guesses == userguess;
+        
+        if ((chances == 0))
+            losses++;
+        
+      
+        
+
         
         
         var html = "<h1>The Psychic Game</h1>" +
         "<h5>Guess what letter I am thinking of</h5>" +
         "<p> Wins: " + wins + "</p>" +
         "<p>Losses: " + losses + "</p>" +
-        "<p>Gueses Left: " + chances + "</p>";
+        "<p>Gueses Left: " + chances + "</p>" +
+        "<p>You guessed so far: " + guesses + "</p>";
 
         document.querySelector("#game").innerHTML = html;
 
