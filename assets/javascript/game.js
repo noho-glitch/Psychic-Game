@@ -1,4 +1,7 @@
 document.onkeyup = function() {
-    alert("working!");
+    var usergueess = String.fromCharCode(event.keyCode).
+    toLowerCase();
+
+    console.log(usergueess);
 
 }
