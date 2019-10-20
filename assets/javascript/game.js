@@ -31,10 +31,8 @@ document.onkeyup = function() {
         
       
         
-
-        
-        
-        var html = "<h1>The Psychic Game</h1>" +
+        var html = "<img src='assets/images/logo.png'></img>" +
+        "<img src='assets/images/crystalball.png'></img>" +
         "<h5>Guess what letter I am thinking of</h5>" +
         "<p> Wins: " + wins + "</p>" +
         "<p>Losses: " + losses + "</p>" +
