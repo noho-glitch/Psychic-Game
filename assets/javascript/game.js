@@ -32,6 +32,7 @@ document.onkeyup = function() {
       
         
         var html = "<img src='assets/images/logo.png'></img>" +
+        "<br>" +
         "<img src='assets/images/crystalball.png'></img>" +
         "<br>" +
         "<audio controls autoplay><source src='assets/audio/wily.mp3' type='audio/mpeg'></audio>" +
