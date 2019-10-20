@@ -1,18 +1,22 @@
 var options = ["a", "b", "c", "d"];
 
 document.onkeyup = function() {
-    var usergueess = String.fromCharCode(event.keyCode).
+    var userguess = String.fromCharCode(event.keyCode).
     toLowerCase();
 
-    console.log(usergueess);
+    console.log(userguess);
 
     var psychicGuess = options[Math.floor(Math.random()*options.length)];
 
     console.log(psychicGuess);
 
-    if (userguesss!=='a' || usergueess!=='b' || usergueess!=='c' || usergueess!=='d' || usergueess!=='e' || usergueess!=='f' || usergueess!=='g' || usergueess!=='h' || usergueess!=='i' || usergueess!=='j' || usergueess!=='k' || usergueess!=='l' || usergueess!=='m' || usergueess!=='n' || usergueess!=='o' || usergueess!=='p' || usergueess!=='q' || usergueess!=='r' || usergueess!=='s' || usergueess!=='t' || usergueess!=='u' || usergueess!=='v' || usergueess!=='w' || usergueess!=='x' || usergueess!=='y' || usergueess!=='z') {
-        alert("please choose a letter!");
-    } else {
-        alert("chosen correctly!");
+    if (userguess=="a" || userguess=='b' || userguess=='c' ||userguess=='d' || userguess=='e' || userguess=='f' || userguess=='g' || userguess=='h' || userguess=='i' || userguess=='j' || userguess=='k' || userguess=='l' || userguess=='m' || userguess=='n' || userguess=='o' || userguess=='p' || userguess=='q' || userguess=='r' || userguess=='s' || userguess=='t' || userguess=='u' || userguess=='v' || userguess=='w' || userguess=='x' || userguess=='y' || userguess=='z') {
+        // alert("you chose a letter");
+        if ((userguess == psychicGuess)) {
+            alert("you win!")
+        // }else{
+        //     alert("please choose a letter!");
+        // }
+        
     }
 }
